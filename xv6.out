@@ -1,0 +1,18 @@
+DEBUG: after consoleinit
+
+xv6 kernel is booting
+
+virtio disk init 0
+init: starting sh
+$ testsh nsh
+simple echo: PASS
+simple grep: PASS
+two commands: PASS
+output redirection: PASS
+input redirection: PASS
+both redirections: PASS
+simple pipe: PASS
+pipe and redirects: PASS
+lots of commands: PASS
+passed all tests
+$ qemu-system-riscv64: terminating on signal 15 from pid 6099 (make)
