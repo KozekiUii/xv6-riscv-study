@@ -82,6 +82,7 @@ __attribute__((noreturn)) void runcmd(struct cmd *cmd)
     if (ecmd->argv[0] == 0)
       exit(1);
     exec(ecmd->argv[0], ecmd->argv);
+    // 若exec失败则返回这里
     fprintf(2, "exec %s failed\n", ecmd->argv[0]);
     break;
 
